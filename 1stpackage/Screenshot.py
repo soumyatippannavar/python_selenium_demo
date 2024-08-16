@@ -14,8 +14,8 @@ driver.maximize_window()
 driver.implicitly_wait(10)
 webele = driver.find_element(By.ID,"details-button")
 
-webele.screenshot(".\\button.png")
+webele.screenshot(".\\button1.png")
 time.sleep(3)
 
-driver.get_screenshot_as_file("C:\\Users\\EI12548\\selenium\\amazon.png")
+driver.get_screenshot_as_file("C:\\Users\\EI12548\\selenium\\amazon1.png")
 time.sleep(2)

@@ -4,6 +4,7 @@ from selenium.webdriver.common.by import By
 
 driver = webdriver.Chrome()
 driver.get("https://www.orangehrm.com/en/30-day-free-trial")
+#driver.get("https://admin-demo.nopcommerce.com/login?ReturnUrl=%2Fadmin%2F")
 parentwindow = driver.current_window_handle
 driver.implicitly_wait(10)
 driver.maximize_window()

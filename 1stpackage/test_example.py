@@ -2,7 +2,8 @@ import pytest
 
 
 @pytest.mark.usefixtures("setup")
-class test_fixture:
+class Test_method:
+
     def test_mag(self):
         print("test1-------")
 

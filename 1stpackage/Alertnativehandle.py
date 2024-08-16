@@ -3,6 +3,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 
 driver = webdriver.Chrome()
+#webdriver.Firefox()
 driver.get("https://www.orangehrm.com/en/30-day-free-trial")
 parentwindow = driver.current_window_handle
 print(parentwindow)
@@ -34,3 +35,5 @@ for i in windowhandle:
 time.sleep(2)
 driver.switch_to.window(parentwindow)
 time.sleep(3)
+driver.execute_script("window.scrollBy(0,-1000)", "")
+time.sleep(2)
